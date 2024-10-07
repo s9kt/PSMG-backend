@@ -13,3 +13,9 @@ func main() {
 
 	server.ListenAndServe()
 }
+
+func CreateRouter() *http.ServeMux {
+	router := http.NewServeMux()
+
+	return router
+}
